@@ -1,0 +1,36 @@
+.jumbotron
+{margin-top: 20px;
+background-image: url("http://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
+background-size: cover;}
+
+.hello{
+    text-align:center;
+}
+
+.pictureone{
+    text-align:center;
+}
+
+#jumbotite{
+    color:white;
+}
+
+#jumbosubtit{
+    color:white;
+}
+
+.carousel {
+    border-style:solid;
+    width:px;
+    height:px;
+  }
+  #mse{
+      color:black;
+  }
+  #mseone
+  
+  {color:black;}
+
+  .underpic{
+      text-align:center;
+  }
