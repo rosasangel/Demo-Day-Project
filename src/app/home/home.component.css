@@ -16,7 +16,7 @@ background-size: cover;}
 }
 
 #jumbosubtit{
-    color:white;
+    color:black;
 }
 
 .carousel {
@@ -34,3 +34,7 @@ background-size: cover;}
   .underpic{
       text-align:center;
   }
+  .memoryCaption{text-align:center}
+
+
+.body{Background-color:orange}

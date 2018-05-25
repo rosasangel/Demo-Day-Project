@@ -1,127 +1,35 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">REAL.AGENT</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+<div class="jumbotron">
+  <h1 class="display-4 enet">Hello, world!</h1>
+  <h3 class="lead" class="enet">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</h3>
+  <hr class="my-4">
+  <h4 class="enetone">
+    <strong>It uses utility classes for typography and spacing to space content out within the larger container.</strong>
+  </h4>
+  <a class="btn btn-primary btn-lg" href="#" role="button">List an event</a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let event of events">
+      <div class="card">
+        <img src="https://worthyoneevents.com/wp-content/uploads/2017/10/events-management-3.jpg" alt="Jane" style="width:100%">
+        <div>
+          <h2>{{event.eventname}}</h2>
+          <p class="title"></p>
+          <p name="eventname">
+            {{event.location}}
+        
+            <br>Time : {{event.time}}
+            <br> Event Type: {{event.eventType}}
+          </p>
+              <p>{{event.email}}</p>
+              <!--routerlink-->
+              <p>
+                <button class="button" routerLink="contact">JOIN</button>
+              </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
-<div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="img1.jpg" alt="Jane" style="width:100%">
-          <div class="container">
-            <h2>AGENT1</h2>
-            <p class="title">AGENT</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button" routerLink="contact">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="column">
-        <div class="card">
-          <img src="img2.jpg" alt="Mike" style="width:100%">
-          <div class="container">
-            <h2>AGENT2</h2>
-            <p class="title">AGENT</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="column">
-        <div class="card">
-          <img src="img3.jpg" alt="John" style="width:100%">
-          <div class="container">
-            <h2>AGENT3</h2>
-            <p class="title">AGENT</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="img1.jpg" alt="Jane" style="width:100%">
-              <div class="container">
-                <h2>AGENT</h2>
-                <p class="title">CEO &amp; Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="img2.jpg" alt="Mike" style="width:100%">
-              <div class="container">
-                <h2>AGNET5</h2>
-                <p class="title">AGENT</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="img3.jpg" alt="John" style="width:100%">
-              <div class="container">
-                <h2>AGENT6</h2>
-                <p class="title">AGENT</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-              <div class="column">
-                <div class="card">
-                  <img src="img1.jpg" alt="Jane" style="width:100%">
-                  <div class="container">
-                    <h2>AGENT7</h2>
-                    <p class="title">AGENT</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="img2.jpg" alt="Mike" style="width:100%">
-                  <div class="container">
-                    <h2>AGENT8</h2>
-                    <p class="title">AGENT</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="img3.jpg" alt="John" style="width:100%">
-                  <div class="container">
-                    <h2>AGNET9</h2>
-                    <p class="title">AGENT</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <router-outlet></router-outlet>

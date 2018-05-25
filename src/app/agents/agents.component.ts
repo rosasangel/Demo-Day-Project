@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventDataService } from '../event-data.service';
 
 @Component({
   selector: 'app-agents',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgentsComponent implements OnInit {
 
-  constructor() { }
+  public events = [
+    {
+      eventname:'',
+      firstname: '',
+      lastname: '',
+      email: '',
+      city: '',
+      zipcode: '',
+      state:'',
+      eventType:'',
+      
+    }
+  ];
+
+  constructor(private _data: EventDataService) { }
+
+
 
   ngOnInit() {
+    //listening for a change
+    this._data.event.subscribe((res) => {
+      this.events = res;
+      console.log(res);
+    });
+
   }
 
 }

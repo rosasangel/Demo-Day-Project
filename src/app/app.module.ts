@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { AgentsComponent } from './agents/agents.component';
 import { ContactComponent } from './contact/contact.component'; 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignuppageComponent } from './signuppage/signuppage.component';
+import { EventDataService } from './event-data.service';
+import { ContactmeComponent } from './contactme/contactme.component';
 
 
 @NgModule({
@@ -17,7 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     AgentsComponent,
     ContactComponent,
-
+    SignuppageComponent,
+    ContactmeComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule.forRoot(),
     FormsModule,
   ],
-  providers: [],
+  providers: [EventDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

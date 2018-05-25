@@ -52,8 +52,20 @@
 }
 
 .jumbotron
-{
-background-image: url("https://i.ytimg.com/vi/8W6u8V29JM0/maxresdefault.jpg");
+{margin-top: 20px;
+background-image: url("https://i1.wp.com/www.ibcomagazine.com/wp-content/uploads/2018/01/s-l1600.jpg?resize=723%2C482&ssl=1");
 background-size: auto 100%;
 ;
+}
+
+.enet{color: white;}
+
+.enetone{
+    color:white;
+}
+
+body{
+
+background-color:orangered;
+
 }

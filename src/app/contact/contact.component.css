@@ -1,8 +1,12 @@
 .jumbotron
 {
-background-image: url("http://www.livenewton.net/wp-content/uploads/2016/07/blue-arrows-pointing-up-e1474161981620.jpg");
+background-image: url("https://i1.wp.com/www.ibcomagazine.com/wp-content/uploads/2018/01/s-l1600.jpg?resize=723%2C482&ssl=1");
 background-size: auto 100%;
-;
+background-color: orangered;
+border-style:solid;
+
+
 }
 
 .submit{text-align:center;}
+.body{color: orangered}
