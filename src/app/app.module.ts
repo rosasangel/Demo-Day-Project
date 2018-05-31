@@ -12,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SignuppageComponent } from './signuppage/signuppage.component';
 import { EventDataService } from './event-data.service';
 import { ContactmeComponent } from './contactme/contactme.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +28,7 @@ import { ContactmeComponent } from './contactme/contactme.component';
     AppRoutingModule,
     NgbModule.forRoot(),
     FormsModule,
+    HttpClientModule
   ],
   providers: [EventDataService],
   bootstrap: [AppComponent]

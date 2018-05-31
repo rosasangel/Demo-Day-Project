@@ -56,3 +56,26 @@
 }
 
 body{background-color: orange;}
+
+
+    .footerforall{background-color:lightcyan;}
+
+
+    .login-btn{
+        color: #fff!important;
+    background-color: #2196F3!important;
+    padding: 12px 24px!important;
+    border: solid thin #2196F3;
+    cursor: pointer;
+    }
+
+    
+
+    .login-btn:hover{
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+             box-shadow: 0 10px 6px -6px #777;
+    }
+
+
+    

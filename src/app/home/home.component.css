@@ -1,7 +1,8 @@
 .jumbotron
-{margin-top: 20px;
+{margin-top: 0px;
 background-image: url("http://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
-background-size: cover;}
+background-size: cover;
+padding-top: 50px}
 
 .hello{
     text-align:center;
@@ -12,15 +13,19 @@ background-size: cover;}
 }
 
 #jumbotite{
-    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font-size: 4.5em ;
 }
 
 #jumbosubtit{
-    color:black;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font-size: 2em ;
 }
 
 .carousel {
-    border-style:solid;
+    /* border-style:solid; */
     width:px;
     height:px;
   }
@@ -34,7 +39,14 @@ background-size: cover;}
   .underpic{
       text-align:center;
   }
-  .memoryCaption{text-align:center}
+  .memoryCaption{border-bottom-style:solid;
+    text-align:center;}
 
 
 .body{Background-color:orange}
+
+.continerforparas{padding-top: 30px;
+margin-bottom:100px;
+}
+
+.musk{text-align:center;}

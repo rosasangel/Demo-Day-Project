@@ -1,6 +1,6 @@
 <h1 class="contactme">Contact Me</h1>
 <div class="container">
-  <form action="action_page.php">
+  <form  #contactForm="ngForm" (ngSubmit) = "submit()">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -17,7 +17,7 @@
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+<input type="file" name="comments" (change)="onSelect($event)">
     <input type="submit" value="Submit">
 
   </form>
