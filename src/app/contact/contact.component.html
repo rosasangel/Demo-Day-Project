@@ -1,4 +1,14 @@
-<!-- <div class="body">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container forwords">
+    <h1 class="display-4">TAGALONG</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
+
+
+
+<div class="body">
   <form #contactForm="ngForm" (ngSubmit)="newEvent()">
     <div class="form-row">
       <div class="form-group col-md-6">
@@ -21,53 +31,50 @@
 
       <div class="form-group col-md-6">
         <label for="inputPassword">Time</label>
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Time" name="time">
+        <input type="text" class="form-control" id="inputPassword3" placeholder="Time" name="time" [(ngModel)]="contact.time">{{contact.time}}
 
       </div>
       <br>
-    
-    <div class="form-group col-md-6">
-      <label for="inputAddress">Email</label>
-      <input type="email" class="form-control" id="inputAddress" placeholder="Email" name="email" [(ngModel)]="contact.email"> {{contact.email}}
-    </div> -->
 
-    <!-- <div class="form-row"> -->
-<!--      
       <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity" name="city" [(ngModel)]="contact.city"> {{contact.city}}
+        <label for="inputAddress">Email</label>
+        <input type="email" class="form-control" id="inputAddress" placeholder="Email" name="email" [(ngModel)]="contact.email"> {{contact.email}}
       </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select id="inputStatee" class="form-control" name="state" [(ngModel)]="contact.state">{{contact.state}}
-          <option selected>Choose...</option>
-          <option>California</option>
-        </select>
+
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity" name="city" [(ngModel)]="contact.city"> {{contact.city}}
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputStatee" class="form-control" name="state" [(ngModel)]="contact.state">{{contact.state}}
+            <option selected>Choose...</option>
+            <option>California</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip" name="zipcode" [(ngModel)]="contact.zipcode"> {{contact.zipcode}}
+        </div>
+
+        <input type="url" name="imagesubmit" [(ngModel)]="contact.imagesubmit">
+
       </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input type="text" class="form-control" id="inputZip" name="zipcode" [(ngModel)]="contact.zipcode"> {{contact.zipcode}}
-      </div>
-   
-   
-   
+
+      <!-- submit button -->
+
+
+
+
+
+
+      <input type="submit" value="submit" class="btn btn-secondary btn-lg btn-block">
+      <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> -->
+
     </div>
-         -->
-    <!-- submit button -->
-   
-
-
-   
-   
-    <!-- <input type="submit" value="submit">
   </form>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">
-        <br>
-        <br>
-      </h1>
-      <p class="lead"></p>
-    </div>
-  </div>
-</div> -->
+
+</div>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>

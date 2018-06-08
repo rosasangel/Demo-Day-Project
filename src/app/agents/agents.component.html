@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1 class="display-4 jumbotrontitle">Never Go Alone!</h1>
+  <h1 class="display-4 jumbotrontitle">TagAlong</h1>
   <h3 class="lead" class="enet">Post your public invatation! Someone is sure to respond!</h3>
   <hr class="my-4">
   <h4 class="enetone">
@@ -7,25 +7,33 @@
   </h4>
   <a class="btn btn-primary btn-lg" href="#" role="button">List an event</a>
 </div>
-<!-- <div class="container">
+
+
+
+<!--event-->
+
+
+<div class="container">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let event of events">
       <div class="card">
-        <img src="" alt="Jane" style="width:100%">
+        <!-- <img src=" -->
+        {{event.imagesubmit}}" 
+        <!-- alt="Jane" style="width:100%"> -->
         <div>
           <h2>{{event.eventname}}</h2>
-          <p class="title"></p>
-          <p name="eventname">
+          <h2 class="title"></h2>
+          <h2 name="eventname">
             {{event.location}}
         
             <br>Time : {{event.time}}
             <br> Event Type: {{event.eventType}}
-          </p>
+          </h2>
               <p>{{event.email}}</p>
 
 
               <!--routerlink-->
-<!--<p>
+<p>
          <button class="button" routerLink="contact">JOIN</button>
               </p>
         </div>
@@ -33,76 +41,85 @@
 
     </div>
   </div>
-</div> -->
-
-
-
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://static1.squarespace.com/static/560d66e0e4b02ef113036578/t/5a2f0894f9619a3a83c26830/1513031860531/kirby-gladstein-photography-slow-magic-concert-los-angeles-2017-10?format=500w"
-        alt="Man Playing drums" style="width:100%">
-      <div class="container">
-        <h2>Bunny Man Concert</h2>
-        <p class="title">
-          <button type="button" class="btn btn-primary">concert</button>
-          <button type="button" class="btn btn-info">Music</button>
-        </p>
-        <p>I have an extra ticket to go see Bunny Man because my friend bailed, who wants to tag along?</p>
-        <br>
-        <p>Location: 9009 Sunset Blvd, West Hollywood, CA 90069</p>
-        <p>Time: 9:00 pm</p>
-        <p>musicislife@example.com</p>
-        <p>
-          <button class="button">Contact</button>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="http://kartsportnews.com/OLD-site/content/2012/12RotaxMaxChallengeNZRnd1DanielKinsmanleads-1.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Go-Kart Racing</h2>
-        <p class="title">
-          <button type="button" class="btn btn-warning">Adrenaline Rush</button>
-          <button type="button" class="btn btn-danger">Sports</button>
-          <button type="button" class="btn btn-success">Outdoors</button>
-        </p>
-        <p>I have a need for k1 speed. Who wants to tag along with me to go Go-Kart racing?</p>
-        <br>
-        <p>Location: 4498 Fast Lane, Los Angeles, Ca 90210</p>
-        <p>Time: 4:30 pm</p>
-
-        <p>speedywheels@example.com</p>
-        <p>
-          <button class="button">Contact</button>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://static1.squarespace.com/static/569ecd2b22482eeee4f76cc8/t/58f8c557a5790a609eece4a1/1492698472907/" alt="John"
-        style="width:100%">
-      <div class="container">
-        <h2>Tennis</h2>
-        <p class="title">
-          <button type="button" class="btn btn-danger">Sports</button>
-        </p>
-        <p>Come join me for a match of tennis at the park!</p>
-        <br>
-        <p>Location: 1017 Tennis Lane, Los Angeles, Ca 90241</p>
-        <p>Time: 9:30 am</p>
-
-        <p>wiiTennisBeast@example.com</p>
-        <p>
-          <button class="button">Contact</button>
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
+
+
+
+
+<!-- <div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let event of events">
+          <div class="card ">
+            <img src="https://static1.squarespace.com/static/560d66e0e4b02ef113036578/t/5a2f0894f9619a3a83c26830/1513031860531/kirby-gladstein-photography-slow-magic-concert-los-angeles-2017-10?format=500w"
+              alt="Man Playing drums" style="width:100%">
+            <div class="container">
+              <div class="text-content">
+                <div>
+                  <h2>{{event.eventname}}</h2>
+                  <p class="title"></p>
+                  <p name="eventname">
+                    {{event.location}}
+                
+                    <br>Time : {{event.time}}
+                    <br> Event Type: {{event.eventType}}
+                  </p>
+                      <p>{{event.email}}</p>
+        
+              </div>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img src="http://kartsportnews.com/OLD-site/content/2012/12RotaxMaxChallengeNZRnd1DanielKinsmanleads-1.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <div class="text-content">
+                <h2>Go-Kart Racing</h2>
+                <p class="title">
+                  <button type="button" class="btn btn-warning">Adrenaline Rush</button>
+                  <button type="button" class="btn btn-danger">Sports</button>
+                  <button type="button" class="btn btn-success">Outdoors</button>
+                </p>
+                <p>I have a need for k1 speed. Who wants to tag along with me to go Go-Kart racing?</p>
+                <br>
+                <p>Location: 4498 Fast Lane, Los Angeles, Ca 90210</p>
+                <p>Time: 4:30 pm</p>
+      
+                <p>speedywheels@example.com</p>
+              </div>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img src="https://static1.squarespace.com/static/569ecd2b22482eeee4f76cc8/t/58f8c557a5790a609eece4a1/1492698472907/" alt="John"
+              style="width:100%">
+            <div class="container">
+              <div class="text-content">
+                <h2>Tennis</h2>
+                <p class="title">
+                  <button type="button" class="btn btn-danger">Sports</button>
+                </p>
+                <p>Come join me for a match of tennis at the park! It will be alot of fun and very intense!</p>
+                <br>
+                <p>Location: 1017 Tennis Lane, Los Angeles, Ca 90241</p>
+                <p>Time: 9:30 am</p>
+      
+                <p>wiiTennisBeast@example.com</p>
+              </div>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div> -->

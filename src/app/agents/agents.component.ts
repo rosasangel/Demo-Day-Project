@@ -18,6 +18,8 @@ export class AgentsComponent implements OnInit {
       zipcode: '',
       state:'',
       eventType:'',
+      time:'',
+      imagesubmit:'',
       
     }
   ];

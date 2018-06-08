@@ -9,4 +9,15 @@ border-style:solid;
 }
 
 .submit{text-align:center;}
-.body{color: orangered}
+.body{
+/* width: 20%; */
+margin-left: 5%;
+margin-right:5%;
+margin-top:5%;}
+
+.form-row{margin-bottom:5%}
+
+.forwords{text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 4.5em Georgia, serif;
+}

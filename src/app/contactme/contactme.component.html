@@ -3,10 +3,13 @@
   <form  #contactForm="ngForm" (ngSubmit) = "submit()">
 
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+</div>
+<input type="text" id="fname" name="firstname" placeholder="Your name.." [(ngModel)]="contact.firstName" >
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="contact.lastName">
+    <label for="lname">E-mail</label>
+    <input type="email" id="lname" name="email" placeholder="youremail@example.com" [(ngModel)]="contact.email">
 
     <label for="country">Country</label>
     <select id="country" name="country">
@@ -16,7 +19,7 @@
     </select>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" [(ngModel)]="contact.subject"></textarea>
 <input type="file" name="comments" (change)="onSelect($event)">
     <input type="submit" value="Submit">
 

@@ -9,13 +9,15 @@ import {HttpClient} from '@angular/common/http';
 export class ContactComponent implements OnInit {
   public contact = {
     eventname: '',
-    firstname: '',
-    lastname: '',
+    // firstname: '',
+    // lastname: '',
     email: '',
     city: '',
     zipcode: '',
     state:'',
     eventType:'',
+    time:'',
+    imagesubmit:'',
 
     
   }
