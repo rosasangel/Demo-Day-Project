@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
   }
 
 
-  constructor(private _data: EventDataService) { }
+  constructor(private _data: EventDataService, private http:HttpClient) { }
 
   ngOnInit() {
 
@@ -37,6 +37,9 @@ export class ContactComponent implements OnInit {
   // send the change to data service
   newEvent(){
     this._data.addItem(this.contact);
+  var url= 'https://localhost:8008/event/saveEvent';
+  this.http.post(url,this.contact);
+    
   }
 
 }

@@ -46,13 +46,15 @@
 }
 
 .jumbotron
-{margin-top: 0px;
-background-image: url("https://i1.wp.com/www.ibcomagazine.com/wp-content/uploads/2018/01/s-l1600.jpg?resize=723%2C482&ssl=1");
-background-size: auto 100%;
-;
-}
+{
+    /* margin-top: 0px; */
+background-image: url("http://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
+background-size: cover;
+padding-top: 50px;
+height: 300px;}
 
-.enet{text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+
+/* .enet{text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
     color: white;
     font: 1.5em Georgia, serif;}
 
@@ -60,7 +62,7 @@ background-size: auto 100%;
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
   color: white;
   font: 1.5em Georgia, serif;
-}
+} */
 
 .jumbotrontitle{
 /* font-size: 40px; */
@@ -70,11 +72,7 @@ background-size: auto 100%;
 
 }
 
-body{
 
-background-color:orangered;
-
-}
 
 
 
@@ -83,3 +81,75 @@ background-color:orangered;
     height: 410px;
 }
 
+.body-space{height:500px;}
+
+.jumbotron-fluid{height:250px;}
+
+#jumbotite{
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font-size: 4.5em ;
+}
+
+#jumbosubtit{
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font-size: 2em ;
+}
+
+
+
+
+
+/* @group Blink */
+/* .blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+} */
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+.containerforallcards{margin-left:5%;
+margin-right:5%;}

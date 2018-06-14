@@ -1,80 +1,89 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container forwords">
-    <h1 class="display-4">TAGALONG</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+<div class="jumbotron jumbotron-fluid body shadow-lg p-3 mb-5 bg-white rounded">
+  <div class="container">
+    <h1 class="display-4 " id="jumbotite">Tag Along</h1>
+    <p class="lead" id="jumbosubtit">
+      <strong>Share your experiences real people.</strong>
+    </p>
   </div>
 </div>
 
 
 
 
-<div class="body">
-  <form #contactForm="ngForm" (ngSubmit)="newEvent()">
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="fName">Event Name</label>
-        <input type="text" class="form-control" id="inputEmail4" placeholder="Event Name" name="eventname" [(ngModel)]="contact.eventname"> {{contact.eventname}}
-      </div>
-      <div class="form-group col-md-6">
-        <label for="fName">First Name</label>
-        <input type="text" class="form-control" id="inputEmail44" placeholder="First Name" name="firstname" [(ngModel)]="contact.firstname"> {{contact.firstname}}
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Last Name</label>
-        <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" name="lastname" [(ngModel)]="contact.lastname"> {{contact.lastname}}
-      </div>
-
-      <div class="form-group col-md-6">
-        <label for="inputText">Event Type:</label>
-        <input type="text" class="form-control" id="inputText" name="eventType" [(ngModel)]="contact.eventType"> {{contact.eventType}}
-      </div>
-
-      <div class="form-group col-md-6">
-        <label for="inputPassword">Time</label>
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Time" name="time" [(ngModel)]="contact.time">{{contact.time}}
-
-      </div>
-      <br>
-
-      <div class="form-group col-md-6">
-        <label for="inputAddress">Email</label>
-        <input type="email" class="form-control" id="inputAddress" placeholder="Email" name="email" [(ngModel)]="contact.email"> {{contact.email}}
-      </div>
-
+<!-- <div class="body"> -->
+  <h1 class="listevent">LIST EVENT</h1>
+  <div class="container p-3 mb-2 bg-dark text-white shadow-lg p-3 mb-5 rounded">
+    <form #contactForm="ngForm" (ngSubmit)="newEvent()">
       <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="fName">Event Name</label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="Event Name" name="eventname" [(ngModel)]="contact.eventname"> {{contact.eventname}}
+        </div>
 
         <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity" name="city" [(ngModel)]="contact.city"> {{contact.city}}
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputStatee" class="form-control" name="state" [(ngModel)]="contact.state">{{contact.state}}
-            <option selected>Choose...</option>
-            <option>California</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip" name="zipcode" [(ngModel)]="contact.zipcode"> {{contact.zipcode}}
+          <label for="inputText">Event Type:</label>
+          <input type="text" class="form-control" id="inputText" name="eventType" [(ngModel)]="contact.eventType"> {{contact.eventType}}
         </div>
 
-        <input type="url" name="imagesubmit" [(ngModel)]="contact.imagesubmit">
+        <div class="form-group col-md-6">
+          <label for="fName">First Name</label>
+          <input type="text" class="form-control" id="inputEmail44" placeholder="First Name" name="firstname" [(ngModel)]="contact.firstname"> {{contact.firstname}}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" name="lastname" [(ngModel)]="contact.lastname"> {{contact.lastname}}
+        </div>
+
+
+
+        <div class="form-group col-md-6">
+          <label for="inputPassword">Time</label>
+          <input type="text" class="form-control" id="inputPassword3" placeholder="Time" name="time" [(ngModel)]="contact.time">{{contact.time}}
+
+        </div>
+        <br>
+
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Email</label>
+          <input type="email" class="form-control" id="inputAddress" placeholder="Email" name="email" [(ngModel)]="contact.email"> {{contact.email}}
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" name="city" [(ngModel)]="contact.city"> {{contact.city}}
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputStatee" class="form-control" name="state" [(ngModel)]="contact.state">{{contact.state}}
+              <option selected>Choose...</option>
+              <option>California</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zipcode" [(ngModel)]="contact.zipcode"> {{contact.zipcode}}
+          </div>
+          <!-- this is where I wanted to put the image submision -->
+          <!-- <input type="url" name="imagesubmit" [(ngModel)]="contact.imagesubmit"> -->
+
+        </div>
+
+        <!-- submit button -->
+
+
+
+
+
+
+        <input type="submit" value="submit" class="btn btn-info btn-lg btn-block">
+        <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> -->
 
       </div>
-
-      <!-- submit button -->
-
-
-
-
+    </form>
+  </div>
+<!-- </div> -->
+<!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
 
 
-      <input type="submit" value="submit" class="btn btn-secondary btn-lg btn-block">
-      <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> -->
-
-    </div>
-  </form>
-
-</div>
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>

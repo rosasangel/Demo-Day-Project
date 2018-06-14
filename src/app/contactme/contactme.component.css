@@ -28,9 +28,80 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color:green;
+    /* background-color:green; */
     padding: 20px;
 }
 
 
 .contactme{text-align:center;}
+
+
+
+
+
+Set-up
+body {
+	color: rgb(6, 106, 117);
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 100%;
+	background: #F4F6F8;
+	padding: 3em 0 0 0;
+	line-height: 62px;
+	-webkit-perspective: 1000px; 
+}
+
+/* Container box to set the sides relative to */
+.cube {
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	height: 200px;
+
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+
+	-webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; /* <-NB */
+    
+}
+
+/* The two faces of the cube */
+/* .flippety,.flop {
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189, .8);
+
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset;
+	height: 200px;
+} */
+
+/* Position the faces */
+/* .flippety {
+	-webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    background-color:orange;
+}
+
+.flop {
+	-webkit-transform: rotateX(-90deg) translateZ(-100px);
+    transform: rotateX(-90deg) translateZ(-100px);
+    background-color:orangered;
+} */
+
+/* Rotate the cube */
+/* .cube:hover { */
+	/* -webkit-transform: rotateX(90deg); */
+	/* transform: rotateX(90deg);  */
+	/* Text bleed at 90º */
+/* } */
+
+
+/* .cubes{Padding-bottom:2%;}
+
+#tagalong1{padding-top:5%;font-size: 5em}
+
+#tagalong2{padding-top:5%;font-size: 5em} */
